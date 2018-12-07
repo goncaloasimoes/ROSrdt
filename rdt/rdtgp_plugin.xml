@@ -1,0 +1,7 @@
+<library path="lib/libglobal_planner">
+  <class name="global_planner/GlobalPlanner" type="global_planner::GlobalPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>
+      A simple planner that seeks to place a legal carrot in-front of the robot
+    </description>
+  </class>
+</library>

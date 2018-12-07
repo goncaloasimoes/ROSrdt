@@ -1,0 +1,7 @@
+#request fields
+# map metadata
+
+# planner
+nav_msgs/OccupancyGrid grid
+---
+bool status

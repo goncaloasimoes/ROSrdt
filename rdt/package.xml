@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+    <name>rdt</name>
+    <version>0.1.0</version>
+    <description>
+
+        A server for making path plans with an rdt
+
+    </description>
+    <author>Jose Castelo, Goncalo Simoes, Edgar Meireles</author>
+    <maintainer email="jbcastelo@hotmail.com">Jose C.</maintainer>
+    <license> GNU </license>
+
+    <buildtool_depend version_gte="0.5.68">catkin</buildtool_depend>
+
+    <depend>map_msgs</depend>
+    <depend>rospy</depend>
+    <depend>roscpp</depend>
+    <depend>pluginlib</depend>
+    <depend>actionlib</depend>
+    <depend>geometry_msgs</depend>
+    <depend>costmap_2d</depend>
+    <depend>nav_msgs</depend>
+    <depend>message_runtime</depend>
+
+    <test_depend>rospy</test_depend>
+    <test_depend>rostest</test_depend>
+    <test_depend>rosunit</test_depend>
+
+    <export>
+        <nav_core plugin="${prefix}/rdtgp_plugin.xml" />
+    </export>
+</package>
